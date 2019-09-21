@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Search - A++ Learning</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/main.css" />
+		<script src="./config.js"></script>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/register.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/profileTutor.js"></script>
+		<script src="assets/js/profile.js"></script>
+		<script src="assets/js/search.js"></script>
+	</head>
+	<body onload="initialize()">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index2.html" class="logo">A++ Learning</a>
+					<nav id="nav">
+						<a href="index2.html">Home</a>
+						<a href="profile.html">Profile</a>
+            			<a href="search.html">Search</a>
+           			 	<button type="button" onclick="logout()">Logout</button>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+		<div class="search-boxes">
+			<div class="search-page">
+				<hr />
+					<h2>What class Do You Need Help With? </h2>
+				<hr />
+				Subject:
+				<select id = "selectSubj" name = "selectSubj" onchange = "populate(this.id, 'selectCourse')" >
+					<option>Select subject</option>
+					<option value = "Math">Math</option>
+					<option value = "Computer Science">Computer Science</option>
+					<option value = "English">English</option>
+					<option value = "Physics">Physics</option>
+				</select>
+				<hr>
+				Course Name:
+				<select id = "selectCourse" name = "selectCourse">
+				</select> 
+
+				<hr>
+				<button type="button" onclick="displayPossibleTutors()">Search for Tutors</button>
+			</div>	
+			<div class="search-selection">
+				<hr/>
+				<h3>Top Choices</h3>
+				<div id="searchSel" class="search-button">
+
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

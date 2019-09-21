@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	A++ Learning
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Home - A++ Learning</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/main.css" />
+		<script src="./config.js"></script>
+				
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/register.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/profileTutor.js"></script>
+		<script src="assets/js/profile.js"></script>
+		<script src="assets/js/search.js"></script>
+    </head>
+    
+	<body onload="initialize()">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="index2.html" class="logo">A++ Learning</a>
+                <nav id="nav">
+                    <a href="index2.html">Home</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="search.html">Search</a>     
+                    <button type="button" onclick="logout()">Logout</button>
+                </nav>
+            </div>
+        </header>
+        <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1><span>A Personalized Local Tutoring Service For <b>Your</b> University!<br />
+					</span></h1>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header>
+						<h2>About Us</h2>
+					</header>
+					<p>
+						Our product, called “A++ Learning”, will be a local and university-based tutoring system where students can find specialized tutors. We will provide connections between students and local tutors that are willing to work together in order to get the help the student needs. Giving a wide range of people offers easier access to find the right tutor for students’ specific university classes that fits their needs.
+					</p>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<header>
+								<h3>Become a Tutor Today!</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/pic16.jpg" alt="" />
+							</div>
+							<p>Is there a subject that you're good at? Perfect! Register as a tutor now so you can help others and get paid.</p>
+						</div>
+					</article>
+					<article class="alt">
+						<div class="content">
+							<header>
+								<h3>Need a Tutor?</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/pic15.jpg" alt="" />
+							</div>
+							<p> Need help with your classes? Register as a student and find a tutor who goes to the same school with you.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<div class="personal-pics">
+								<img src="images/pic19.jpg" alt="Avatar" />
+							</div>
+							
+							<header>
+								<h3>Noah Allen</h3>
+							</header>
+							<p>I am a second year Computer Engineering major. I am passionate about this project because often times I find myself in a class where I could use some help but never really know what to do about it.</p>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+								<div class="personal-pics">
+										<img src="images/pic05.JPG" alt="Avatar" />
+								</div>
+							<header>
+								<h3>Sahil Patel</h3>
+							</header>
+							<p>
+								I’m a 2nd-year Computer Engineering Major. I have always been a very introverted person which made going out and finding my own services mentally strenuous and usually not a first or even second option. I would have loved an easy-to-use platform to allow me to book tutoring appointments from the safety of my space.
+								</p>
+						</div>
+					</article>
+					<article>
+					<div class="content">
+							<div class="personal-pics">
+									<img src="images/pic20.jpg" alt="Avatar" />
+								</div>
+							<header>
+								<h3>Tinghui Song</h3>
+							</header>
+							<p>
+								I'm a 2nd year Computer Engineering Major. Personally, I had run into many situations where I forgot to book an appointment and ends up not able to get help. If there’s a tool that offers me more tutoring options, it could be very useful when I need urgent help.
+								</p>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+								<div class="personal-pics">
+										<img src="images/pic18.jpg" alt="Avatar" />
+									</div>
+							<header>
+								<h3>Hongtao Wu</h3>
+							</header>
+							<p>I’m a 2nd-year Computer Science major.  When I need to solve a problem in a short time, I notice that it’s really hard to get a reply from tutors, or sometimes it just took too long. So I really wish if there has a website runs like a real-time Chegg which you can instantly get the response from the tutor for help. </p>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+								<div class="personal-pics">
+										<img src="images/pic17.jpg" alt="Avatar" />
+									</div>
+							<header>
+								<h3>Siyi Zhan</h3>
+							</header>
+							<p>I’m a 3-rd year Computer Science Major. I usually do my homework at night, and it’s always hard to find my professor or TAs or any other campus resources to help me, which makes me realize many college students need more convenient tutoring at any time.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+	</body>
+</html>
